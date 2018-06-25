@@ -1,1 +1,0 @@
-﻿public class NotEditableOnInspector : UnityEngine.PropertyAttribute {}

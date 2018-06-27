@@ -14,7 +14,7 @@ public class SceneNavigator : EditorWindow
     [MenuItem("Scene Navigator/Main Menu")]
     private static void OpenMainMenu()
     {
-        OpenScene("Main Menu");
+        OpenScene("MainMenu");
     }
 
     private static void OpenScene(string _scene)

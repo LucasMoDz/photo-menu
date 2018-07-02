@@ -5,6 +5,13 @@ public class DoNotDestroy : MonoBehaviour
 {
     private void Awake()
     {
-       DontDestroyOnLoad(this.gameObject);
+        if (FindObjectsOfType<DoNotDestroy>().Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 }

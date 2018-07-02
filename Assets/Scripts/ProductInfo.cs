@@ -43,6 +43,8 @@ public class ProductInfo : MonoBehaviour
 
     public void ShowPanel(FoodData _food)
     {
+        GameObject[] images = GameObject.FindGameObjectsWithTag("Player");
+        
         Quantity = 0;
 
         productName.text = _food.foodName;
@@ -110,6 +112,12 @@ public class ProductInfo : MonoBehaviour
         myCanvasGroup.alpha = 1;
         myCanvasGroup.blocksRaycasts = true;
         myCanvasGroup.interactable = true;
+
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].SetActive(false);
+            images[i].SetActive(true);
+        }
     }
 
     private void CheckRecommendedFoods()

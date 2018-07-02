@@ -32,12 +32,6 @@ namespace Package.CustomLibrary.Implementation
 
         public Coroutine LoadScene(IConvertible _sceneName, float _minSeconds, Button _buttonToDisable, LoadSceneMode _sceneMode, Image _imageToFill, Text _textToShow)
         {
-            TopicHandler.TopicHandler.Invoke(TopicHandler.Implementation.InternalTopics.RemoveListenersFromTopics);
-            TopicHandler.TopicHandler.Invoke(TopicHandler.Implementation.InternalTopics.RemoveTopics);
-
-            TopicHandler.TopicHandler.AddEvent(TopicHandler.Implementation.InternalTopics.RemoveTopics);
-            TopicHandler.TopicHandler.AddEvent(TopicHandler.Implementation.InternalTopics.RemoveListenersFromTopics);
-
             return StartCoroutine(LoadSceneCO(_sceneName, _minSeconds, _buttonToDisable, _sceneMode, _imageToFill, _textToShow));
         }
 

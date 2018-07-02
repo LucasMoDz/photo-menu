@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -192,8 +193,13 @@ public class OrderManager : MonoBehaviour
             tot += foodList[i].data.foodCost * foodList[i].quantity;
         }
 
-        Text totText = GameObject.FindGameObjectWithTag("Tot").GetComponent<Text>();
-        totText.text = (Mathf.Approximately(0.0f, tot) ? "0.00" : tot.ToString("##.#0")) + " €";
+        GameObject[] tots = GameObject.FindGameObjectsWithTag("Tot");
+
+        for (int i = 0; i < tots.Length; i++)
+        {
+            Text totText = tots[i].GetComponent<Text>();
+            totText.text = (Mathf.Approximately(.0f, tot) ? "0.00" : tot.ToString("##.#0")) + " €";
+        }
     }
 
     public void ClearOrderList()

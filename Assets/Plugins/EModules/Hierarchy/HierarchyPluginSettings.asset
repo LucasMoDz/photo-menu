@@ -60,10 +60,10 @@ MonoBehaviour:
     width: 16
   - enable: 1
     sib: 2
-    width: 32
+    width: 189
   - enable: 1
     sib: 3
-    width: 16
+    width: 155
   - enable: 0
     sib: 4
     width: 48

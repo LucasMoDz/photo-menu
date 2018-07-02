@@ -141,9 +141,14 @@ public class FoodInstance : MonoBehaviour
         var tempClass = order.foodList.Find(food => food.data.foodName == data.foodName);
 
         if (tempClass == null)
-            return;
+        {
+            quantity = 0;
+        }
+        else
+        {
+            quantity = tempClass.quantity;
+        }
 
-        quantity = tempClass.quantity;
         quantityText.text = quantity.ToString();
 
         if (consigliatoQuantityText != null)

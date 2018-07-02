@@ -55,15 +55,17 @@ public class ProductInfo : MonoBehaviour
         {
             OrderManager.FoodQuantityClass tempClass = order.foodList.Find(food => food.data.foodName == _food.foodName);
 
-            Quantity = tempClass != null ? tempClass.quantity : 0;
-
             if (tempClass != null)
             {
                 inputField.text = tempClass.data.note == string.Empty ? string.Empty : tempClass.data.note;
+                Quantity = tempClass.quantity;
+
+                inputField.text = tempClass.data.note;
             }
             else
             {
                 inputField.text = string.Empty;
+                Quantity = 0;
             }
         }
 

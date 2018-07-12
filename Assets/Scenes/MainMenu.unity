@@ -6563,8 +6563,8 @@ RectTransform:
   m_Father: {fileID: 286520914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.20095336}
+  m_AnchorMin: {x: 0, y: 0.023309803}
+  m_AnchorMax: {x: 1, y: 0.2079463}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6580,7 +6580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 1}
+  m_Color: {r: 0.64705884, g: 0.64705884, b: 0.64705884, a: 0.641}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6591,8 +6591,8 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 60
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 6
+    m_BestFit: 1
+    m_MinSize: 40
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -6600,13 +6600,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Nome ristorante
+  m_Text: 'Sviluppata da:
 
-    P.IVA: 05489304589317
+    Zenko Games s.r.l.
 
-    Via di Prova, 123
+    info@zenkogames.com
 
-    Padova (PD)'
+    www.zenkogames.com
+
+    Via della Croce Rossa, 32
+
+    35129 Padova (PD)'
 --- !u!222 &497883891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17200,6 +17204,27 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 286520913}
+    ActiveGameObject: {fileID: 286520913}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 497883888}
+    ActiveGameObject: {fileID: 497883888}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1815587951}
+    ActiveGameObject: {fileID: 1815587951}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 451527116}
     - {fileID: 1807889567}
     ActiveGameObject: {fileID: 1807889567}
@@ -17343,27 +17368,6 @@ MonoBehaviour:
   - list:
     - {fileID: 214672319}
     ActiveGameObject: {fileID: 214672319}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 2126606596}
-    ActiveGameObject: {fileID: 2126606596}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1288724881}
-    ActiveGameObject: {fileID: 1288724881}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1406445991}
-    ActiveGameObject: {fileID: 1406445991}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -26081,7 +26085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1815587952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26095,10 +26099,10 @@ RectTransform:
   m_Father: {fileID: 2013453700}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 515.7943, y: -1018.64526}
+  m_SizeDelta: {x: 945.58856, y: 185.20822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1815587953
 MonoBehaviour:
